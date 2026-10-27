@@ -4,10 +4,12 @@
 # ==============================================================================
 
 echo "=========================================================="
-echo ">> [1/3] Tạo thư mục trên HDFS..."
+echo ">> [1/3] Tạo thư mục trên HDFS (/data_input và /spark-logs)..."
 echo "=========================================================="
 hdfs dfs -mkdir -p /data_input
+hdfs dfs -mkdir -p /spark-logs
 hdfs dfs -chmod -R 777 /data_input
+hdfs dfs -chmod -R 777 /spark-logs
 
 echo "=========================================================="
 echo ">> [2/3] Tải file input.txt và sales_data.csv lên HDFS..."

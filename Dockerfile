@@ -6,9 +6,10 @@ LABEL maintainer="BigData-Team: Toan(Master), Anh(Slave1), Huy(Slave2), Khoa(Sla
 # Tự động hóa các prompt cài đặt, tránh bị treo chờ nhập phím
 ENV DEBIAN_FRONTEND=noninteractive
 
-# 2. Cài đặt các gói phụ thuộc cơ sở: Java OpenJDK 8, SSH Server, Python 3, mạng
+# 2. Cài đặt các gói phụ thuộc cơ sở: Java OpenJDK 8, OpenJDK 21 (cho Hive 4.x), SSH Server, Python 3, mạng
 RUN apt-get update && apt-get install -y --no-install-recommends \
     openjdk-8-jdk \
+    openjdk-21-jre-headless \
     openssh-server \
     openssh-client \
     rsync \

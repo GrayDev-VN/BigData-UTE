@@ -50,8 +50,7 @@ def main():
     input_path = resolve_sales_data_path(spark, cli_path)
 
     print("=" * 75)
-    print(" BÀI TOÁN 5 (NÂNG CAO): PHÂN TÍCH DOANH THU E-COMMERCE VỚI SPARK SQL")
-    print(" Phụ trách: Nguyễn Đức Toàn (Master Node)")
+    print(" PHÂN TÍCH DOANH THU E-COMMERCE VỚI SPARK SQL")
     print("=" * 75)
     print(f">> Nguồn dữ liệu: {input_path}\n")
 
