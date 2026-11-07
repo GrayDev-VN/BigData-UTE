@@ -128,3 +128,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# spark-submit --master yarn --deploy-mode client /home/hadoop/pyspark_jobs/05_ecommerce_analytics.py
